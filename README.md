@@ -1,21 +1,72 @@
-Business Outcome Predictor
-==========================
+🌟 Business Outcome Predictor
 
-Run steps:
+A complete end-to-end machine learning pipeline for predicting business outcomes using real-world data (Telecom Customer Churn).
 
-1. Put dataset CSV into `data/` (e.g. TelecomCustomerChurn.csv)
-2. Create venv:
-   python3 -m venv .venv
-   source .venv/bin/activate
-   python -m pip install -r requirements.txt
+⸻
 
-3. Run modules in order (from project root):
-   python src/data_loader.py --data data/TelecomCustomerChurn.csv
-   python src/cleaning.py data/TelecomCustomerChurn.csv
-   python src/eda.py
-   python src/features.py
-   python src/models.py
-   python src/evaluate.py
-   python src/visualize.py
+📌 Project Overview
 
-Outputs: `outputs/figures/`, `outputs/reports/`, `outputs/models/`
+This project builds a full ML workflow that predicts whether a telecom customer will churn (Yes/No).
+It includes:
+
+✔ Data loading
+✔ Data cleaning
+✔ Feature engineering
+✔ EDA visualization
+✔ Model training (Logistic Regression, Random Forest)
+✔ Model evaluation
+✔ ROC curve comparison
+✔ Automatic outputs folder structure
+✔ One-click pipeline using main.py
+
+All scripts use a centralized paths.py for safe file management.
+
+business_outcome_predictor/
+│
+├── data/
+│   └── TelecomCustomerChurn.csv
+│
+├── outputs/
+│   ├── figures/
+│   ├── reports/
+│   └── models/
+│
+├── src/
+│   ├── paths.py
+│   ├── data_loader.py
+│   ├── cleaning.py
+│   ├── features.py
+│   ├── eda.py
+│   ├── models.py
+│   ├── evaluate.py
+│   ├── visualize.py
+│   └── main.py
+│
+├── .venv/
+|--------------------------------------------------------------------------
+├── requirements.txt
+└── README.md
+
+📊 Outputs Generated
+
+📁 outputs/models/
+	•	logreg.joblib
+	•	rf.joblib
+
+📁 outputs/figures/
+	•	churn_distribution.png
+	•	monthly_charges_hist.png
+	•	tenure_vs_churn.png
+	•	confusion_logreg.png
+	•	confusion_rf.png
+	•	roc_comparison.png
+
+📁 outputs/reports/
+	•	initial_explore.json
+	•	model_comparison.json
+   
+❤️ Author
+
+Sharon Karunya
+Full-Stack AI Developer (in progress!)
+Business ML Project – End-to-End
