@@ -47,24 +47,7 @@ business_outcome_predictor/
 ├── requirements.txt
 └── README.md
 
-📊 Outputs Generated
 
-📁 outputs/models/
-	•	logreg.joblib
-	•	rf.joblib
-
-📁 outputs/figures/
-	•	churn_distribution.png
-	•	monthly_charges_hist.png
-	•	tenure_vs_churn.png
-	•	confusion_logreg.png
-	•	confusion_rf.png
-	•	roc_comparison.png
-
-📁 outputs/reports/
-	•	initial_explore.json
-	•	model_comparison.json
-   
 ❤️ Author
 
 Sharon Karunya
